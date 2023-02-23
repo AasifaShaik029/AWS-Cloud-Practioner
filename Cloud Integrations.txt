@@ -1,0 +1,22 @@
+Intro:
+When we deploy multiple a applications, they will communicate with each other.
+Two ways of communication:
+1.Synchrnous communications(app to app)-->talking directly to one another.
+2.Asynchrnous / Event based(app to queue to app)
+
+
+Synchrnous communications:
+Have problems:
+suddden traffic....In this case we can decouple our apps
+
+Services which decouple our appls:
+1.Simple Queue Service:decouple
+Used to decouple microservice,districuted systems and serverless apps.
+There are 3 components(which perform tasks) and on other hand there are queues.
+so each queue will send msgs to each component. mshs will be stored in all the quesues.
+comp 1-->receives msg A from queue and performs its task and deltes it
+comp2-->receives msg A from another queue and performs its task and deltes it....it continues
+
+SNS(notification,subscribers,events)
+kinesis(real time big data streaming)
+aws mq(maaged apache active mq)

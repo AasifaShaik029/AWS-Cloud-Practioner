@@ -1,0 +1,19 @@
+Docker:Docker is an open source containerization platform.
+ It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and
+ dependencies required to run that code in any environment.
+ECS/Fargate/ECR: To run/launch docker containers in AWS
+-->With ECS you create ec2 insatcnes to run docker containers(not serverless)
+-->With Fargate will automatically finds a way to run conatainers
+
+Storing docker images-->ECR
+Running docker images-->ECS/fargate
+
+Serverless:Developers dont manage server anymore.
+There will be servers but we dont see them..it will work backend.
+Developers just need to deploy code. Servers will look over it
+
+The serverless services we used so far are:
+1.S3
+2.DynamoDB
+3.Fargate
+4.Lamda

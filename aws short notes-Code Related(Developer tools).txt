@@ -1,0 +1,107 @@
+Developer Tools: cloud *
+Code deploy:(free service)
+
+Hybrid Service(works both on EC2 Instances and on-premises)
+-->We want to deploy our application automatically
+-->Doesnt depends on anything(independent)
+-->It will find way to upgrade the versions of our applications
+works with 2 different ways:
+1.works with EC2 Instance
+2.Works with On-premises servers
+
+
+We need to provision and configure servers ahead of time with code deploy agaent installed.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Code Commit:
+Free for first 5 users.
+
+It is like github but within aws.
+Before pushing code to servers , it needs to be stored in a repositories.
+Generally developers store in git based repositories.
+-->Code changes automatically be versioned
+-->aws integrated
+-->private
+-->fully managed,scalable and highly available
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Code Build:
+pay as you go
+
+Code building service
+-->It retrieves code from code commit, builds code by code build and ready to deploy artifact.
+-->Fully managed,continoulsy scalable and highly available
+-->serverless, pay as you go
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Code Pipeline:
+1 dollar per pipeline(afetr free tier)
+CodePipeline builds, tests, and deploys your code every time there is a code change, 
+based on the release process models you define.
+
+By using code pipeline we can connect code commit and code build
+-->orchestrate the different steps to have the code automatically pushed to production.
+-->Whenever developer pushes code into repositories,it should be automatically build, tested
+and deploy into servers.
+Code-->build-->test-->provision(the servers)-->deploy(on the provisioned servers)
+The above pipeline is handles by code pipeline
+-->Fully managed
+-->Compatible with 3rd party services,aws services(few),custom plugins  
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Code Artifact:
+To store code dependencies 
+ fully managed artifact repository service that makes it easy for 
+organizations of any size to securely store, publish, and 
+share software packages used in their software development process.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Code Star:
+Unified UI to easily manage software development activities
+in one-place
+
+Code star:
+
+Generally CI/CD will 
+develop code-->check in code-->Build Code-->Run tests-->Notify-->Deploy code
+
+In aws we have separate services(code commit,code build,code deploy)
+now, new service whcih is code star combines all these into one single place.
+
+CodePipeline builds, tests, and deploys your code every time there is a code change, 
+based on the release process models you define. On the other hand, 
+
+AWS CodeStar is detailed as "Quickly Develop, Build, and Deploy Applications on AWS".
+Collection of aws services(code commit,code build,code deploy,cloud formation)
+Code star makes all the CI/CD decisions for you.
+It solves the problem of CI/CD
+Each service have separate cost
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+AWS Cloud 9:
+It is a cloud IDE in aws for writitng,running and debugging code directly in the cloud.
+It is a code editor which runs in a web browser(as it is a cloud)
+Allows for code collaboration in real-time(pair programming)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

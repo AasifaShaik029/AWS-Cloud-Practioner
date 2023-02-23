@@ -1,0 +1,16 @@
+SSM:AWS System manager:
+Manages both on premises and ec2 instances.
+-->Hybrid Service
+way to patch a fleet of ec2 instances/on premises  
+Run commands across an entire fleet of servers
+We need to install of the agents in our VMs
+
+
+SSM Session manager:
+Allows to start a secure shell on your ec2 and on premises without need of port 22
+
+
+ops work:
+chef and puppet are the 2 apps which are used to configure servers automatically.(not from aws)
+aws opswork =chef and puppet
+Alternative to AWS SSM

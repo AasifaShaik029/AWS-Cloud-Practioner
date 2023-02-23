@@ -1,0 +1,4 @@
+CDK(Cloud development kit):
+You can deploy your code into your familiar languages. (JSON/YAML which is used in cloud formation normallly)
+but u can use your familiar languages and CDK CLI Creates a cloud formation templte
+and which will be deployed into cloud formation.

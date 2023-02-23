@@ -1,0 +1,26 @@
+Lambda:(compute service)
+It manages your application despite of the load.- withour failure.
+Runs backend code in response to events such as object upload to s3, creating tables in fynamodb et
+Once you upload your code to lambda, the service handles all the capacity,scaling, pacthing etc
+and provide admin infra to run your code.
+By using cloudwatch it will monitor the performa
+
+The code that you run in lambda is called a lambda fucntion.
+
+
+We upload code in a zip file. Once fucntion is loaded you select the event source to monitor
+such as amazon s3, dynamodb table.
+Within few seconds, lambda will be ready to trigger your function automatically.
+
+
+
+
+We have virtual servers in the cloud (EC2 instances) but it is bound to limited memory and cpu.
+we add Scaling groups where we add/remove servers over time
+
+In lambda , instead of VMs , we use functions(no servers to manage)
+scaling is automated here
+have integration with whole services in aws
+Event driven-->inkoved when needed
+lambda container image must implement the lambda runtime API
+Usecase of lambda:

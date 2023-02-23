@@ -1,0 +1,64 @@
+data can be stored in relational and non-relational databases.
+Relational:
+This is structured
+-->The data is stored in tables.and the tables are linked to each toher.
+Non-relatinal db:(flexible,scalability,cost eff )
+Doesnt have structure.
+The data is stored in tables.and the tables are not linked to each toher.
+1.key-value pairs
+2.column store
+3.graph
+4.documents
+ex:dynamo db is  a keyvalue database
+
+inmemory: data is stored in RAM not in hard disk
+A CPU cache is a small block of memory that's designed to help the CPU easily retrieve frequently used information. 
+Dynamo db is a serverless service.
+
+RDS-->RDS deployment models
+Elasti cache (low latency)and DAX
+Dynamodb(no sql)
+redshift:it is one database
+Amazon EMR(hadoop clusters)
+Amazon enthena(serverless query service)
+Quick sight(reporting and dashboard)
+DocumentDB(aurora for mongoDB/no SQL)
+Neptune(grapg db)
+QLDB(Financial transactions,ledger)
+Managed blockchain(blockchain,decentralised,hyperledger,etheruem)
+DMS-data migration service(to migrate data from one db to other)(Migration)
+GLUE-Managed ETL(extract Transform Load) and Data catalog service
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics. 
+The AWS Glue Data Catalog is a central repository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

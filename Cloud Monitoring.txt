@@ -1,0 +1,139 @@
+Cloud monitoring:
+-----------------------
+Cloud watch:
+-----------------
+It is a monitoring service for AWS cloud resources and apps you run on aws.
+to set up metrics monitoring for every service in AWS.
+You get alerts when things go wrong.
+You can track metrices(var of a performancelogs),resource utilization,application performance and overall operational health.
+
+Offers 2 types of monitoring:
+1.Basic monitoring(free)polls every 5 mins
+2.Detailed monitoring(Chargable)polls every  min
+
+
+-->Records metrices for EBS,EC2,ELB and S3
+-->It shows performance by cpu level(hypervisor level)
+
+
+Events:Based on CM, we can create events(ex:trigger lambda fun)
+Agents:Install agents on EC2 instances . This will send monitoring data(cloudwatch logs) of EC2 ins to cloud watch.
+Agent is a hybrid. It works both on ec2 and on premises.
+Alarms:Based on usage u can set alarms for actions.(If cpu utilization is too high,to shutdown instance,autoscaling etc)
+The CloudWatch Alarms feature allows you to watch CloudWatch metrics and to receive notifications when the metrics fall outside of the levels (high or low thresholds) that you configure.
+
+
+
+Event Bridge:
+-------------------------
+Formrly called as cloudwatch events
+Fully managed
+It is an event bus that helps in integrating diff apps.
+By using it, we can create event driven architectures.
+(Ex: U want to receive SNS notification everytime when EC2 ins are terminated.
+2.Automated deployments using code pipeline ecryday at 11 pm
+
+
+Different parts in Eventbridge:
+
+
+Event producer-->Once event is generated it will put into event bus--->AWS event bridge event bus-->Rules(Inside bus there will be many rules and once rule is matched,then it further forwards to its targets)--->AWS lambda(trigger lambda fun),Kinesis,AWS SNS 
+(aws services,custom apps,third party saas providers)
+Single rule can have multiple targets(max targets :5)
+
+Imp terms:
+Event: Indicates a change in an environment
+Rules:A rule matches incoming events and routes them to targets for processing
+Targets:processes the evnts 
+Event bus:Receives events. When you create a rule you associate it with a specific event bus and the rule is matched only to events received by that event Bus
+
+
+CLOUD TRAIL:
+
+--->Its a global service
+
+It records and tracks all app programming interface requests in AWS account.
+These requests can be initiated from SDKs, AWS CLI, console,another aws service
+Example: If a person deletes an instance in aws and wants to know who deleted it ,we can see it in cloud trial as it have API call tracked and recorded.
+
+
+Cloud trial events:
+----------------------------
+-->Every API request captured is recorded as an event.
+-->Multiple events are recorded withtin cloud trial logs.
+Events contain an array of associated meta data.
+Ex:
+Identity of the caller
+Timestamp of the request
+source of IP address
+
+3 types of Cloud trial  events:
+1.management--->can separate read evnets to write events
+2.Data Events
+3.Cloud trila insights events 
+Cloud trial insights events (payable)
+---------------------------------
+It becomes difficult to understand unsual activity if we get multiple requests 
+Detect unusual activity in your account.
+
+
+Cloud Trail logs:
+----------------------
+Events are stored for 90 days in cloudtrial
+Cloudtrail delivers log files to S3  
+New log files are created in every 5 mins
+Cloud trial log files can also be delivered to cloud watch logs for metric monitoring and altering via SNS
+
+Management events---(Continuos analysis)--->Cloudtrail insights---------->(Generate)Insights events----(sent to)--->loud trail console,s3 bucket,eventvridge event
+
+X-Ray:
+---------
+-->AWS xray collects apps requets data and helps developers analysze and debug
+ produsction,microservices and identify issues and opportunities for optimization
+-->Analyse and Debug applications using distributed tracing
+
+Service health dashboard: sttaus of all aws services across all regions
+personalhealth dashboard:aws events that impact your infra
+AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+Amazon code Guru: Automated code reviews using ML and apps performance recommendations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

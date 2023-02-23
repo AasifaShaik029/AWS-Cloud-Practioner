@@ -1,0 +1,18 @@
+Lambda Vs Elastic BeanStalk:
+ elastic beanstalk deploys a long running application whereas 
+lambda deploys short running code function
+
+-->Lambda can at maximum run for 15 minutes, whereas EB can run continuously.
+-->Generally, we deploy websites/apps on EB whereas lambda are generally used for triggered functionality 
+-->One Lambda can only handle one request at a time whereas number of concurrent requests EB can handle depends on your underlying infrastructure. 
+like processing image when image gets uploaded to S3.
+So, if you are having say 100 requests, 100 lambdas will be created whereas these 
+100 requests can be handled by one underlying EC2 instance in EB
+-->Lambda is serverless (underlying infra is entirely abstracted from developer). 
+Whereas EB is automation over infra provisioning. 
+You can still see your EC2 instances, load balancer, auto scaling group etc. in your AWS console. 
+You can even ssh/rdp to your instance and change running services.
+ AWS EB allows you also to have your custom AMIs.
+-->Lambda is having issue of cold starts as in lambda, infra needs to be provisioned on demand 
+by AWS, whereas in EB, 
+you generally have EC2 instances already provisioned to handle your requests.(we can have control over configuration)(PAAS)

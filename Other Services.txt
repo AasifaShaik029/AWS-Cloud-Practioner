@@ -1,0 +1,180 @@
+1.Amazon Workspaces:
+------------------------------
+DAAS:
+Desktop as a Service
+DAAS Vs VDI:
+-----------------
+Both are cloud hosted desktops
+https://youtu.be/ilvRFlBxbiY
+
+VDI is a single user control or org. creation of VD on remote server setup
+Its IT team should manage evrything.Examples of these VDI software brokers include VMware, Citrix, Microsoft, and Parallels.
+DAAS cloud based service provided by 3rd party providers. Providers will manage evrything
+Ex: aws ...infra providers.
+
+
+1.Amazon Workspaces:
+------------------------------
+Managed desktop as a service
+-->Easily provision windows and linus desktops in the cloud
+-->Great to eliminate mangmnt of on premises VDS 
+A hybrid company would like to provision desktops to their employees so they can access securely both the AWS Cloud and their data centers. 
+Minimizing latency across multiple regions:
+---------------------------------------------------------
+-->office1 (California)--------------------office2(Paris)
+then create workspace which is near to the users like
+office1 workspace(Virginia)--------------------------office2 workspace(london)
+
+2. Amazon AppStream 2.0:
+---------------------------------
+
+Desktop App stream dervice. 
+If you want to have a app to be create within a browser, you can use app stream
+Deliverred wihtin web browsers
+(no need of VDI)
+
+
+
+3.Amazon Sumerian:
+----------------------------
+Creates virtual reality,Augmented reality and 3D applications :)
+
+4.IOT Core:
+----------------
+AWS service is serverless and lets you connect billions of devices to the AWS Cloud
+Allows to connect IOT devices to the AWS Cloud
+AWS IoT Core lets you securely connect IoT devices to the AWS Cloud and other devices without the 
+need to provision or manage servers.
+IOT Devices:connected car, lock,door etc
+
+5.Elastic Transcoder:
+---------------------------
+converts media files stored in S3 into media files in the formats required by consumer playback devices(phns etc)
+
+EX:
+video in s3 input bucket--->transcode pipleine--->s3 output bucket-->makes compatible with different tyoes of devices
+
+6.App Sync:
+----------------
+-->store and sync data across mobile and web appl in real time
+-->Uses graphOL(mobile technology from facebook)
+
+
+7.AWS Amplify:
+-------------------
+Set of tools and services that helps you develop and deploy full stack web and mobile apps
+
+you can manage API,CI/CD,STORAGE,SOURCE CODE,GITHUB ,MONITORING ETC
+
+
+8.Device Farm:
+-------------------
+to test your application across real desktop browsers and mobile devices
+Fully managed service that test your web and mobile apps against desktop browsers, real mobile devices.
+
+-->Test your apps in diferent device to check if it is working fine
+
+
+9.BackUp:
+-------------
+-->cheaper
+AWS fuly managed service to centrally manage and automate backups across AWS services
+Supports PITR(Point in time recovery)
+
+-->create a backup plan and assign to AWS resources and backes up to s3
+
+
+
+10.Disaster Recovery Strategies:
+-----------------------------------------
+Backup and restore---->cheaper
+pilot light
+Warm Standby
+Multi-Site/Hot-Site
+
+
+
+11.Elastic Disaster Recovery (DRS)
+old name: CLoudEndure Disaster Recovery
+CloudEndure Disaster Recovery is used to centrally automate backups across AWS services
+while AWS Backup is used to quickly and easily recover servers into AWS.
+
+
+recover physical virtual servers
+
+12.DataSync:
+-----------------
+ Move large amount of data from on premises to aws
+
+-->Incremental
+
+
+13.Application Discovery Service:
+---------------------------------------------
+-->Plan migration projects to move from on pre to cloud
+
+
+14.Fault injection simulator:
+---------------------------------
+(FIS) FIS experiments on aws workloads
+perform chaos engieneering test
+make failure and tests
+
+
+15.Step functions:
+---------------------
+serverlessnvisual workflow
+
+
+16. Ground Station:
+
+Lets you control satellite communications, process data and scale your satellite operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

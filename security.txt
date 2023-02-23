@@ -1,0 +1,227 @@
+DDOS Attack:
+Distributed deniel of service
+-->Cyber attack ON OUR infra
+
+Ex: If attacker wants to cause DOS on our servers, he creates many master servers and from each master server, bots wil be created and
+sends the requests to our server, so our server cant handle so many requets as a result if other 
+normal person wants to access our server he also wont able to access it. This is DOS
+
+Ways to protect from DDOS attacks:
+1.AWS Shield Standard: protects from DDOS at no additioanl costs
+2.AWS Shield Advanced:24/7 premium DDOS protection.
+3.AWS WAF(web app firewall):Filter spacific requests based on rules.
+4.Cloudfront and route 53 :usinf global edge network
+If combined with AWS shield, provides attack mitigation at the edge loc.
+
+AWS sheild:Shield is only used to safeguard running applications from DDoS attacks.
+Have 2 componenst.
+1.aws sheild standard-->activated for every customer.
+2.aws advanced-->to have high level of defence
+
+.AWS WAF(web app firewall):Filter spacific requests based on rules
+-->Protects your web applications from common web exploits(layer 7)
+-->layer 7 -->HTTP Layer 4-->TCP
+-->deploy on ALB,Gateway,cloud front
+-->Rate based rules
+
+Penetrating Testing:
+------------------------
+Trying to attack our own infra by testing as security purpose
+Penetration Testing is allowed without prior approval on 8 services. DDoS, port flooding and protocol flooding are examples of prohibited activities.
+
+Encryption:
+-------------
+We can use encryption keys to enkyrpt data
+2 types of encryption
+--->Data at rest Vs. Data in transit
+
+Data rest:data is fixed in position
+Data will be stored or archived on a device, on hard disk, on RDS instance, S3 Glacier deep archive etc
+Data trnsit:
+Data can be moved from one place to another thru network
+like from on premises to ec2, EC2 to dynamo 
+
+
+Services used to perform Encryption of service:
+-------------------------------------------------------------
+1.KMS:(Key management service)-->Encryption for a service
+-->AWS manages the encryption keys for us
+2.CloudHSM
+--->AWS provides encryption hardware and we can mange our keys
+-->It provides HSM(Hardware security model)
+
+
+CMK:
+Customer master keys
+Types:
+1.customer managed CMK
+2.AWS Manged CMK
+3.AWS owned CMK
+4.Cloud HSM Keys(key stores)
+
+ACM(AWS Certificate manager)
+----------------------------
+in flight encryption and generates certificates
+
+Secrets manager:
+-------------
+used to store secrets(credentails,changing passwords etc)
+rotation of secrets . if u want to change ur pwd every x  days u can do here
+
+U can create secrets for RDS,diff dbbs
+-->A secret to be managing in RDS and  to be rotated
+
+Artifact :
+reports to download docs from 3rd party 
+agreements which aloows you to review,accept track status of aws agreements
+BAA,HIPAA
+
+Guard duty:
+-----------------
+Amazon GuardDuty is a threat detection service that continuously monitors for malicious 
+activity and unauthorized behavior to protect your AWS accounts and workloads.
+-->Intelligent threat discovery to protect aws account
+-->Uses machine learning alogirthms,3rd party data 
+-->protects u from crypto currency attacks
+-->detects VPC flow logs, cloud trail logs,DNS logs. EKS Audit logs
+
+
+Inspector:
+Automate security assessments for aws infra 
+install agent
+Scans vunerabilities in aws.
+-->Only for EC2 instances and container infra
+
+
+Config:(payable) 
+--------
+-->Helps with auditing and recording compliance of your aws resources.
+-->resource configuration and their complaince tracking 
+-->Keeps track of the chnages happening in AWS
+-->You would be notifies thru SNS
+-->Configuration data will be stored in amazon s3.
+-->Evaluates non compliant resources(shows red)
+-->Changed activities can be seen in green colour
+
+-->Retrieve configurations of one or more resources
+-->Retrives historical configurations
+-->Produces snapshot of the current configurations of the supported resources
+
+Macie:
+--------
+-->Data security and data privacy service that uses ML and pattern matching to protect your sensitive
+data
+-->Identifies and alerts you to sensitivi data such as PII(personal identifiable info)
+
+Woking:
+Data  will be in our S3 bucktes and analysed by macie and it discovers PII in it and notifies thru cloud watch events integrates with SNS
+
+
+
+Security Hub:
+-----------------
+-->security centralized place in multiple accounts
+-->Security tool to manage security across several AWS accounts(in one org) and automate security checks.
+-->Gives all the alerts of diff services of security in one place as hub.
+-->Alerts of gaurd duty,inspector,macie,IAM access analyzer etc in one place
+-->enable config
+
+Amazon detective:
+------------------
+-->To find the root cause of the finding of the alerts uses ML and graphs 
+
+
+
+Abuse:
+--------
+If you suspect any suspicious, illegal activities, you caan report it to aws abuse team.
+
+
+Root user privileges:
+--------------------------
+
+about root user
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

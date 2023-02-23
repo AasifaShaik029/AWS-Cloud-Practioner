@@ -1,0 +1,25 @@
+Well Architected Framework:
+CROPSS
+6 pillars
+1.Operational Excellence
+2.Scurity
+3.Reliability
+4.Performance Efficiency
+5.Cost Optimization
+6.Sustainability
+
+Operational Excellence:
+-----------------------------
+Its services:
+1.Prepare-->by cloudformation,config
+2.Operate-->by cloudformation,config,cloudtrial,cloudwatch ,xray
+3.Evolve-->cloudformation,and code star services
+
+
+Security:
+-------------
+Its services
+1.IAM
+Refer ss
+
+Auto Scaling in EC2 and DynamoDB are examples of horizontal scaling

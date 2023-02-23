@@ -1,0 +1,83 @@
+AWS Organizations:*
+----------------------------
+-->Global service
+-->Aloows to manage multiple accounts in an organization.
+-->Main account is called "Mater Acoount"
+-->other accounts are called "Child Accounts"
+-->Benefits of Managing multiple accounts in an org:
+1.Billing can be done by only one master account as a single payment--"Consolidated Billing."
+2.If we use more S3,EC2..we get discounts..so if multiple accounts usage is high we get discounts(volume discounts for EC2,S3 etc)
+3.pooling of reserved EC2 instances for optimal savigns
+
+-->Restrcit account privileges using "service control policies(SCP)"
+-->Enable cloud trail on all the accounts
+
+Organizational Units(OU):
+-->We can organize multiple account (Refer ss) thru business units,environmental lifecycle,project based 
+-->We can have multiple OUs inside Other OUs
+
+SCP:
+--------
+-->To restrict the inner accounts, enable SCP to restrcit what children can do
+-->Restrict access to certain services (ex:cant use EMR etc)
+-->Should have explicit allow(doesnot allow anything by default)
+-->For master account, no SCP doesnt apply. 
+Can do anything(if u mention deny also it will allow and for furthuer OUs if u mention deny, it will deny)
+-->Looks likes IAM policy
+-->you can have nested accounts
+
+Control Tower:
+------------------
+Instead of creating multiple accounts manually, 
+control tower provides a secure environment based on best practice to create multiple accounts.
+-->Automate the setup in few clicks
+
+
+Pricing Models in AWS:
+-------------------------------
+4 pricing models:
+1.pay as you go-->pay whatever u use
+2.Save when you reserve
+3.Pay less by using more: volume based discounts
+4.Pay less as AWS grows
+
+
+
+
+Trust Advisor:
+High level account assessment
+PFSSC
+Advices on 5 categories
+1.cost optimization
+2.Performance
+3.Security
+4.Fualt tolerance
+5.Service limits 
+
+Support Plan:
+Basic & Developer support plan--->7 Core checks
+
+Full checks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

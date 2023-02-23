@@ -1,0 +1,34 @@
+Services in ML:
+1.Amazon Rekognition:
+-->Used to recognize objects,ppl,text scenes in images and videos using ML
+-->Facial analysis and facial search for user verification, ppl counting
+-->By using it you can create databases of "Smiliar faces" or compare gaianst celebritites.
+2.Transcribe:
+-->Used to convert speech into text
+-->use deep learning process called ASR automatic speech reg.
+3.polly:
+-->reverse of transcribe
+-->convert text to speech usind DL
+4.Translate:
+Language translation
+5.Lex and connect:
+Lex:
+Same technology that powers alexa
+-->Builds chatbots
+Connect:
+Receice calls , create contact flow based on virtual contact Call center 
+6.Comprehend:
+Natual Language Processing(NLP)
+7.SageMaker:
+Fully managed service for developers and data scientists to build ML models
+-->Predicting scenarios using historical data
+8.Forecast:
+To deliver higly accurate forecasts
+9.Kendra:
+Fully managed document search service 
+Extracts answers from within a document(text,pdf,ppt,drive,s3 etc)
+10.Personalizze:
+Builds applcations with personalized recomendations.
+11.Textarct:
+Automatically extracts text, handwriting and data from any scanned documents using AI and ML
+Ex:scans id card  and resutl   give data in it

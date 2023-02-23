@@ -1,0 +1,46 @@
+All about users and access to accounts:
+
+STS:simple token service:
+---------------------------------
+It is a services hich work behind the scenes.
+-->It is the centre of AWS
+--->It provides "temporary limited privilege credentials" to the user where we can configure expiration period.
+--->provides short term credentials.
+
+
+2.Cognito:
+----------------
+-->User Identity service
+-->We generally use IAM users but it is for within an organization.
+-->But if we want to create users or web and mobile application users, we should use cognito.
+-->It has database of millions of users.
+
+3.MAD(Microsoft Active directory):
+-----------------------------------------------
+Database of objects
+-->Cetralized security mangment
+AWS Directory Service provides multiple ways to use Microsoft Active Directory (AD)
+ with other AWS services. Directories store information about users, groups, and devices, 
+and administrators use them to manage access to information and resources. 
+
+4.AWS IAM Identity Centre(SSO-Single Sign-on):
+---------------------------------------------------------------
+
+IAM Identity Centre-Old name
+
+(SSO-Single Sign-on-New name
+-->One login to access multiple accounts.
+ centrally manage access to multiple AWS accounts and business applications. 
+AWS SSO is an AWS service that enables you to makes it easy to centrally manage access to
+ multiple AWS accounts and business applications and provide users with single sign-on access to
+ all their assigned accounts and applications from one place.
+
+
+
+
+
+
+
+
+
+

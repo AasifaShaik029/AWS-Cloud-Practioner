@@ -1,0 +1,103 @@
+Global Application:
+It is a application deployed in multiple geographies.(Region/Edge Locations)
+Why need to deploy in multi geos?:
+-->Decreased Latency:
+Latency: It is the time takes for a network packet to reach the server.
+Deploy your apps closer to users to Decreased Latency.(Ind and USA takes time,so deploy in asia and usa )
+Disaster Recovery:If one region fails, other region still works
+Attack Protection: Difficult for hackers to attack global infra.
+
+
+Global Applications in AWS:
+1.Global DNS:Route 53
+2.Global Content Delivery Network(CDN):CloudFront
+3.S3 Tranfer Acceleration
+4.AWS Gloabl accelerator
+
+Route 53:(DNS server in aws)
+Route 53 features are (non exhaustive list): Domain Registration, DNS, Health Checks, Routing Policy
+-->It is a managed Domain Name System
+DNS:Collection of rules and records which helps clinets understand how to reach a server thru URLs.
+DNS servers convert URLs and domain names into IP addresses that computers can understand and use.
+EX: If someone types "example.com" into a web browser, a server behind the scenes maps that name to the corresponding 
+IP address.
+Most common records:
+(If below site is mapped to IPV4 address the it is called A record)
+www.google.com-->12.34.545.4==A record(IPV4)
+www.google.com-->200:56457:8:4451:365326:5363256(Quadraple A record)AAAA Record
+search.google.com-->www.google.com-->CNAME(hostname to hostname)
+*ex.com-->aws resouce-->Alias(cloudfront,s3,elb...)
+
+*Routing policies:
+Except 1st one all have health chekcs
+1.simple routing policy(No health checks)
+2.weighted routing policy(we assign weights to servers and based on the weights, traffic will be assigned to the servers)
+Weighted Routing Policy is used to route traffic to multiple resources in proportions that you specify
+3.Latency Routing Policy(r53 is used to reduce the latency by assigning nearest locations)
+4.FailOver routing policy(Based on health check it will connect)
+
+
+
+
+Cloud Front:(216 POINT OF PRESENCE)
+-->Uses Global edge network
+It is a content delivery network(CDN)
+-->Improves read performance, content is cached at the edge(edge caches-->.In global, moving memory storage closer to end users)
+DDOS Protection--(servers in all over the world will get attacked at the same time)
+To protect we use shield,aws web application firewall
+services does CloudFront integrate to protect against web attacks( WAF web access control,AWS Shield )
+
+Ex: If we have hosted our application in S3 (Australia)and we have user who wants to access s3(America) then cloud front 
+
+Then user will request the content from from america by using cloudfront. Cloud front will fetch the 
+content from australia.
+
+what cloufront can cached from
+s3
+HTTP(Custom Origin)
+
+
+How it works:
+First if client wants to access s3
+client (will send request to CF )---->CF(checks if the info is already there is cache, if not )-------->Forward request to the origin(s3) 
+
+
+
+S3 Transfer Acceleration:
+Goenerally s3 bucket transffer only by one region. 
+But by using S3 TA, it can be transferred by all the regions.
+Speeds up the transfer
+How it works:
+Files(USA)(fast public www)----->Edge Location(USA)(fast private www)------>S3(Australia)
+
+
+AWS Glabal Accelerator:
+Improves global application availability and performance using aws global network
+aws region(USA)(public www)----->Edge Location(USA)(fast private www)------>aws region(Australia)
+
+
+AWS ouposts:
+server racks provides infrastructure same as in cloud to on premises
+
+Wavelength-->5G
+AWS Wavelength is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength combines the high bandwidth and 
+ultra-low latency of 5G networks with AWS compute and storage services to enable developers to innovate and build a whole new class of applications.
+Local zones-->extend your vpc to more locations(aws region:N.Virginia)---->can be extended to local zones(boston,chicago..)
+Global architecture:
+1.Single region, single AZ
+2.Single region, multi az
+3.multi region active-passive
+4.multi region active-active
+
+
+
+
+
+
+
+
+
+
+
+
+

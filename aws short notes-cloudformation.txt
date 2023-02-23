@@ -1,0 +1,20 @@
+Cloud Formation:
+Generally used for lambdas
+-->Infrastructure as a code
+By cloud formation, you can setup,model,have,provision,manage all the services at one place, so that you can manag
+spending less time in managing these resources and focus on runtime of your applications.
+-->We need to create templates. For that we need JSON files.
+Structure of JSON:
+AWS Template format vrsion
+Description
+Metadata
+Parameters
+Mappings
+Conditions
+Outputs
+Resources
+Demo:
+We need to create statck , we need to design a templtae(ex:lamp stack)
+We drag resources into the template and json script will be automatically be created
+Ex:if we drag s3, then in s3 service auomatically cucket will be created..
+We can replicate the template as many times as we want.

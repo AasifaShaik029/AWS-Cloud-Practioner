@@ -1,0 +1,64 @@
+VPC:
+
+VPC,Subnets,Internet gatewayIin/out),route tables,
+To create a normal Virtual Machine, we need 3 services.
+EC2(CPU,Ram)
+EBS(hard disk)
+VPC(networking)
+
+-->In aws we have 2 types of services
+1.AWS Managed-->(SAAS services)
+2.Customer manager-->(IAAS,PAAS Services)
+
+-->"Customer Managed servies comes under VPC"
+Ex:EC2, Elastic container service,caches,RDS
+
+-->In these customer managed services, we need to configure VPC
+
+Undeerstanding of VPC:
+Take house as an exmaple
+
+-->MainGate,Main door, Sub doors,living room,Bedrooms,kitchen
+
+-->Each customer managed service is bound to a network called VPC.
+-->Network inside a network is called Subnets(2 types)corresponds to AZs
+-->Public subnet:Any one can access(have internet)
+-->private:should have access.(Doesnot have internet)
+
+-->We need to create a gateway to VPC(like maingate to the house) is called Internet Gateway(2 way access)
+-->Gateways to the subnets are called routers(route tables consists of rules)
+-->Based on rules of route tables it decides access for public subnets or private subnets
+
+-->If we want access to the services inside subnets, we must need Internet gatway permission
+-->To use private subnets , there is a gateway called NAT gateway.
+-->To use NAT gateway, we need to create in public subnets and thru that u can access private subnets.
+-->private subnets cannots access public subnets services
+-->NAT gateway only have Outgoing access not incoming(one way traffic)
+
+
+-->To provide security for private subnets, we have, NACL(Network access control lists) that works in subnets levels.
+(allows an blcokes)(have rules in it)
+-->SG(security grps)works on server level(only allows rules)
+
+-->To track or records the logs like who gained access, who denied etc will be stored in VPC File logs.
+
+
+VPC Peering:
+---------------
+-->connect 2 VPC privately using AWS network to behave as they are belongs to same network
+VPC endpoints:
+-->To access services privately. ALL the services are interface type but s3 and dynamo db are gaeteway
+
+
+
+
+
+
+
+
+
+
+
+
+
+
